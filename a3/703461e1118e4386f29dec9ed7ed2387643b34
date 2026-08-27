@@ -1,0 +1,27 @@
+README.md
+  s_0c9dca07dc24a6::t_cb93a4e00a98b1 1-8,10-36
+  h_1f271f14fa2b0c 9
+SKILL.md
+  h_1f271f14fa2b0c 1-218
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "a3703461e1118e4386f29dec9ed7ed2387643b34",
+  "prompts": {},
+  "humans": {
+    "h_1f271f14fa2b0c": {
+      "author": "Jason Seeto <jasonseeto@propertyme.com>"
+    }
+  },
+  "sessions": {
+    "s_0c9dca07dc24a6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fbf0c8687ffeqas4m4BV0XZvWm",
+        "model": "unknown"
+      },
+      "human_author": "Jason Seeto <jasonseeto@propertyme.com>"
+    }
+  }
+}
