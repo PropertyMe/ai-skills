@@ -1,0 +1,14 @@
+SKILL.md
+  h_1f271f14fa2b0c 64-65,71-72,78-79,85-86,92,131,144-145,209-210
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "b175577d7129f144e2a4e698cc5750f75637e7cd",
+  "prompts": {},
+  "humans": {
+    "h_1f271f14fa2b0c": {
+      "author": "Jason Seeto <jasonseeto@propertyme.com>"
+    }
+  }
+}
