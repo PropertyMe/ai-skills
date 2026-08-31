@@ -61,35 +61,35 @@ All 22 tools, grouped by domain:
 **Properties**
 | Tool | What it does |
 |---|---|
-| `list_properties` | Paginated list of properties (offset/limit, max 50). |
-| `search_properties` | Search properties by term (max 50 results). |
+| `list_properties` | Paginated list of properties (offset/limit, max 2000). |
+| `search_properties` | Search properties by term (max 2000 results). |
 | `get_property` | Full details for one property by id. |
 
 **Contacts** (owners, tenants, suppliers)
 | Tool | What it does |
 |---|---|
-| `list_contacts` | Paginated list of contacts (offset/limit, max 50). |
-| `search_contacts` | Search contacts by name (max 50 results). |
+| `list_contacts` | Paginated list of contacts (offset/limit, max 2000). |
+| `search_contacts` | Search contacts by name (max 2000 results). |
 | `get_contact` | Full details for one contact by id. |
 
 **Jobs** (maintenance work orders)
 | Tool | What it does |
 |---|---|
-| `list_jobs` | Paginated list of jobs (offset/limit, max 50). |
-| `search_jobs` | Search jobs by term (max 50 results). |
+| `list_jobs` | Paginated list of jobs (offset/limit, max 2000). |
+| `search_jobs` | Search jobs by term (max 2000 results). |
 | `get_job` | Full details for one job by id. |
 
 **Tasks** (to-do items)
 | Tool | What it does |
 |---|---|
-| `list_tasks` | Paginated list of tasks (offset/limit, max 50). |
-| `search_tasks` | Search tasks by term (max 50 results). |
+| `list_tasks` | Paginated list of tasks (offset/limit, max 2000). |
+| `search_tasks` | Search tasks by term (max 2000 results). |
 | `get_task` | Full details for one task by id. |
 
 **Inspections**
 | Tool | What it does |
 |---|---|
-| `list_inspections` | Paginated list of inspections (offset/limit, max 50). |
+| `list_inspections` | Paginated list of inspections (offset/limit, max 2000). |
 | `search_inspections` | Search inspections by term, optional status filter (Planned, Scheduled, ReScheduled, Inspected, Closed, Cancelled). |
 | `get_inspection` | Full details for one inspection by id. |
 
@@ -128,7 +128,7 @@ User: "What jobs are assigned to me?"
 **3. Search before get.**
 
 Most list/search tools return summary records (id + key fields). Use search to find what the user
-is looking for, then `get_*` with the id for full details. Search returns max 50 results — if
+is looking for, then `get_*` with the id for full details. Search returns max 2000 results — if
 there are more, ask the user to refine their search. When the user wants a report (e.g. "all
 properties", "all jobs"), use `list_*` and page through results instead of `search_*` — search is
 for finding a specific record, not enumerating datasets.
@@ -141,8 +141,8 @@ User: "Show me the details for the Smith property"
 
 **4. Pagination.**
 
-All list tools use `offset` (default 0) and `limit` (default 50, maximum 50). Page through by
-incrementing offset by 50. If search returns exactly 50 results, there may be more — suggest the
+All list tools use `offset` (default 0) and `limit` (default 2000, maximum 2000). Page through by
+incrementing offset by 2000. If search returns exactly 2000 results, there may be more — suggest the
 user narrow their search.
 
 **5. Offer to switch to a portfolio that supports MCP.**
@@ -206,8 +206,8 @@ Low, Medium, High (Urgent is jobs only — tasks only go to High).
 
 ### Rate limiting
 
-The server enforces cost-weighted rate limits (read tools cost 1–5 units). If you hit a rate
-limit error, tell the user and wait — don't retry immediately. Avoid unnecessary calls: prefer
+The server enforces rate limits. If you hit a rate limit error, 
+tell the user and wait — don't retry immediately. Avoid unnecessary calls: prefer
 `search` over repeated `list` + manual filtering. When retrieving large amounts of data, batch
 calls in groups of 5, then wait 5 seconds before issuing the next batch.
 
