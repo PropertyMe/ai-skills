@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "propertyme": {
+      "type": "http",
+      "url": "https://mcp.propertyme.com/mcp/v1"
+    }
+  }
+}

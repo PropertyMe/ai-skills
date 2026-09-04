@@ -1,35 +1,20 @@
 [![skills.sh](https://skills.sh/b/PropertyMe/ai-skills)](https://skills.sh/PropertyMe/ai-skills)
 
-# PropertyMe AI Skills
+# PropertyMe Claude Plugin
 
-Agent skills for working with the [PropertyMe](https://propertyme.com) MCP server. PropertyMe is a property management platform; its MCP server exposes properties, contacts, jobs, tasks, inspections, lease renewals, portfolios, and team members as tools that an AI agent can call.
+The PropertyMe Connector securely links Claude with your PropertyMe Manage PM portfolios, giving you a faster way to understand what’s happening across your portfolio and get answers using everyday language. 
 
-This repository currently contains one skill:
+Instead of clicking through screens or pulling together information manually, simply ask Claude what you need to know. You can: 
 
-- **[propertyme-mcp](./skills/propertyme-mcp/SKILL.md)** — Teaches an agent how to use the PropertyMe MCP server's tools effectively: session and portfolio management, domain terminology, search-vs-get workflows, pagination, field connections, and presentation rules.
+See what needs attention across your team - Access Tasks and team member information to understand outstanding work, responsibilities and priorities across your agency.  
 
-## Install
+Draw deeper insights across all your properties and contacts - Search across your portfolios for properties, owners, tenants and suppliers. 
 
-Install the skill into your agent with the [skills](https://skills.sh) CLI:
+Stay ahead of tenancies - Access lease renewals, agreement dates, advertised rent and re-lets. Ask Claude to identify upcoming expiries, overdue actions or tenancies that need attention. 
 
-```
-npx skills add PropertyMe/ai-skills
-```
+Keep track of inspections and maintenance - Find inspections and maintenance jobs by property, status or priority, track what's done or due and optimise inspection routes across portfolios to plan efficient visits. 
 
-## Prerequisites
-
-The skill assumes a PropertyMe MCP server is configured and available to your agent.
-
-If `list_portfolios` shows no portfolios, or the active portfolio isn't listed, MCP access hasn't been enabled for the account.
-
-## What the skill covers
-
-- **Sessions & portfolios** — `create_session`, `list_portfolios`, `set_portfolio`
-- **Domain glossary** — Portfolio, Property, Contact, Job, Task, Inspection, Lease renewal, Team member (and the internal terms never to show the user)
-- **All 22 tools** — grouped by domain with what each does
-- **Key workflows** — verify active portfolio first, resolve "my" queries via `get_current_user`, search-before-get, pagination, and offering to switch to MCP-enabled portfolios
-- **Common requests** — a table mapping user phrasings to the tools to call
-- **Rate limiting** — cost-weighted limits, batching guidance, and avoiding unnecessary calls
+And that’s just the beginning. With PropertyMe connected to Claude, you can ask questions across your PropertyMe portfolios and turn the information already there into useful answers and insights. Built for Property Managers in Australia and New Zealand, the PropertyMe Connector respects your existing PropertyMe access and permissions. A PropertyMe Advanced plan is required. 
 
 ## License
 

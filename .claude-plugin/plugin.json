@@ -1,0 +1,11 @@
+{
+  "name": "propertyme",
+  "displayName": "PropertyMe",
+  "description": "Connect PropertyMe to Claude to access deeper insights and get more from your portfolios. Connected data includes properties, jobs, tasks, inspections, contacts and more.",
+  "author": {
+    "name": "PropertyMe",
+    "url": "https://propertyme.com"
+  },
+  "version": "0.1.0",
+  "keywords": ["propertyme", "property"]
+}
