@@ -1,0 +1,19 @@
+README.md
+  s_fb02915ebd7e32::t_cc748e6957dd86 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "f70de3a575d2eaaf4c94fbfb255266df483bcf2a",
+  "prompts": {},
+  "sessions": {
+    "s_fb02915ebd7e32": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f9591d8eaffeZOL9thOwR3CVzz",
+        "model": "unknown"
+      },
+      "human_author": "Jason Seeto <jasonseeto@propertyme.com>"
+    }
+  }
+}
