@@ -6,7 +6,7 @@ Agent skills for working with the [PropertyMe](https://propertyme.com) MCP serve
 
 This repository currently contains one skill:
 
-- **[propertyme-mcp](./SKILL.md)** — Teaches an agent how to use the PropertyMe MCP server's tools effectively: session and portfolio management, domain terminology, search-vs-get workflows, pagination, field connections, and presentation rules.
+- **[propertyme-mcp](./skills/propertyme-mcp/SKILL.md)** — Teaches an agent how to use the PropertyMe MCP server's tools effectively: session and portfolio management, domain terminology, search-vs-get workflows, pagination, field connections, and presentation rules.
 
 ## Install
 
