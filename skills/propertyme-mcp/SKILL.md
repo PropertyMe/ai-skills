@@ -42,68 +42,6 @@ Speak the user's language. Never use internal field names.
 | **Lease renewal** | The workflow of renewing a tenancy agreement (owner + tenant sign-off) | — |
 | **Team member** | A staff user of the property management business (Admin, Standard, Limited, Read-only) | "member" alone |
 
-### Tool reference
-
-All 22 tools, grouped by domain:
-
-**Portfolio & session**
-| Tool | What it does |
-|---|---|
-| `create_session` | Creates a new session and returns a session id. MUST be called first, before any other tool. |
-| `list_portfolios` | Lists accessible portfolios + current user identity. Shows which is active. |
-| `set_portfolio` | Switches the active portfolio context for the session. |
-
-**Current user**
-| Tool | What it does |
-|---|---|
-| `get_current_user` | Returns the authenticated user's identity (MemberId, name, role). Call for any "me/my/I" query. |
-
-**Properties**
-| Tool | What it does |
-|---|---|
-| `list_properties` | Paginated list of properties (offset/limit, max 2000). |
-| `search_properties` | Search properties by term (max 2000 results). |
-| `get_property` | Full details for one property by id. |
-
-**Contacts** (owners, tenants, suppliers)
-| Tool | What it does |
-|---|---|
-| `list_contacts` | Paginated list of contacts (offset/limit, max 2000). |
-| `search_contacts` | Search contacts by name (max 2000 results). |
-| `get_contact` | Full details for one contact by id. |
-
-**Jobs** (maintenance work orders)
-| Tool | What it does |
-|---|---|
-| `list_jobs` | Paginated list of jobs (offset/limit, max 2000). |
-| `search_jobs` | Search jobs by term (max 2000 results). |
-| `get_job` | Full details for one job by id. |
-
-**Tasks** (to-do items)
-| Tool | What it does |
-|---|---|
-| `list_tasks` | Paginated list of tasks (offset/limit, max 2000). |
-| `search_tasks` | Search tasks by term (max 2000 results). |
-| `get_task` | Full details for one task by id. |
-
-**Inspections**
-| Tool | What it does |
-|---|---|
-| `list_inspections` | Paginated list of inspections (offset/limit, max 2000). |
-| `search_inspections` | Search inspections by term, optional status filter (Planned, Scheduled, ReScheduled, Inspected, Closed, Cancelled). |
-| `get_inspection` | Full details for one inspection by id. |
-
-**Lease renewals**
-| Tool | What it does |
-|---|---|
-| `list_lease_renewals` | Paginated list, filtered by workflow status (todo, inprogress, pending, closed, active). Defaults to active. |
-| `get_lease_renewal` | Full details for one lease renewal (record + proposed terms + tenancy + ownership). |
-
-**Team members**
-| Tool | What it does |
-|---|---|
-| `list_team_members` | Lists portfolio staff (Admin, Standard, Limited, Read-only roles). |
-
 ### Key workflows
 
 **1. Always verify the active portfolio first.**
